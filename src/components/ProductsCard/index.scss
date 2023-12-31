@@ -1,0 +1,48 @@
+@use '../../sass/variables' as *;
+
+.homeCard{
+    background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 310px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+
+    img{
+        position: relative;
+        right: 15px;
+    }
+
+    &__description{
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 5px;
+
+        button{
+            padding: 8px 30px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color: $contrast-color;
+        }
+
+        button:hover{
+            background-color: #5396ee;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+}

@@ -1,0 +1,119 @@
+@use '../../sass/variables' as *;
+
+.product-detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    position: relative;
+    left: 40px;
+
+&__card{
+    background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 410px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+}
+
+&__left-side{
+    position: relative;
+    top: 100px;
+    left: -47px;
+    margin-bottom: 400px;
+
+    img{
+        position: relative;
+        right: 15px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    } 
+}
+
+&__description{
+    font-size: 20px;
+    position: relative;
+    left: 77px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+    width: 413px;
+
+    p{
+        padding-bottom: 30px;
+    }
+}
+
+&__right-side{
+    position: relative;
+    right: 100%;
+    top: 60px;
+    
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+        padding-bottom: 20px;
+    }
+
+    h2{
+        padding: 30px 0px 15px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    
+}
+
+&__cube-colors{
+    display: flex;
+    flex-direction: row;
+    padding:20px 0px 20px 0px ;
+    margin-left: 8px; 
+    cursor: pointer;
+}
+
+&__sizes{
+    display: flex;
+    flex-direction: row;
+    padding:20px 0px 20px 0px ;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.sombra{
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.sombra:hover{
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+button{
+        padding: 10px 100px;
+        margin-top: 50px;
+        border-radius: 6px;
+        border: none;
+        background-color: $contrast-color;
+        transition: 0.5s;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+button:hover{
+    background-color: #5396ee;
+    transform: translateY(-3px);
+}
+}
